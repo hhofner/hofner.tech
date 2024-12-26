@@ -80,14 +80,57 @@
   line-height: 1.6;
 }
 
+.contact {
+  margin-top: var(--space-xl);
+}
+
+.contact h2 {
+  font-size: var(--step-3);
+  margin-bottom: var(--space-m);
+  color: var(--color-purple-dark);
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: var(--step-1);
+  padding: var(--space-xs);
+  border-radius: var(--border-radius);
+  background: color-mix(in srgb, var(--color-purple-dark) 5%, transparent);
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.2s ease;
+}
+
+.contact-item:hover {
+  background: color-mix(in srgb, var(--color-purple-dark) 10%, transparent);
+}
+
+.contact-item svg {
+  flex-shrink: 0;
+}
+
 @media (prefers-color-scheme: dark) {
   .hero h1,
   .expertise h2,
+  .contact h2,
   .skills-list strong {
     color: var(--color-purple-light);
   }
   
-  .skills-list li {
+  .skills-list li,
+  .contact-item {
     background: color-mix(in srgb, var(--color-purple-light) 5%, transparent);
+  }
+
+  .contact-item:hover {
+    background: color-mix(in srgb, var(--color-purple-light) 10%, transparent);
   }
 }
