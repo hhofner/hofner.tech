@@ -80,6 +80,38 @@
   line-height: 1.6;
 }
 
+.benefits {
+  margin-top: var(--space-xl);
+}
+
+.benefits h2 {
+  font-size: var(--step-3);
+  margin-bottom: var(--space-m);
+  color: var(--color-purple-dark);
+}
+
+.benefits-list {
+  display: grid;
+  gap: var(--space-m);
+}
+
+.benefits-list li {
+  background: color-mix(in srgb, var(--color-purple-dark) 5%, transparent);
+  padding: var(--space-s);
+  border-radius: var(--border-radius);
+}
+
+.benefits-list strong {
+  display: block;
+  font-size: var(--step-1);
+  margin-bottom: var(--space-3xs);
+  color: var(--color-purple-dark);
+}
+
+.benefits-list p {
+  line-height: 1.6;
+}
+
 .contact {
   margin-top: var(--space-xl);
 }
@@ -120,12 +152,15 @@
 @media (prefers-color-scheme: dark) {
   .hero h1,
   .expertise h2,
+  .benefits h2,
   .contact h2,
-  .skills-list strong {
+  .skills-list strong,
+  .benefits-list strong {
     color: var(--color-purple-light);
   }
   
   .skills-list li,
+  .benefits-list li,
   .contact-item {
     background: color-mix(in srgb, var(--color-purple-light) 5%, transparent);
   }
