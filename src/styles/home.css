@@ -52,6 +52,33 @@
   margin-bottom: var(--space-l);
 }
 
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  background-color: var(--color-purple-dark);
+  color: var(--color-white);
+  padding: var(--space-xs) var(--space-m);
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  font-size: var(--step-1);
+  font-weight: 500;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  background-color: color-mix(in srgb, var(--color-purple-dark) 90%, white);
+}
+
+.cta-button svg {
+  transition: transform 0.2s ease;
+}
+
+.cta-button:hover svg {
+  transform: translateX(4px);
+}
+
 .expertise h2 {
   font-size: var(--step-3);
   margin-bottom: var(--space-m);
@@ -150,6 +177,14 @@
 }
 
 @media (prefers-color-scheme: dark) {
+  .cta-button {
+    background-color: var(--color-purple-light);
+    color: var(--color-black);
+  }
+
+  .cta-button:hover {
+    background-color: color-mix(in srgb, var(--color-purple-light) 90%, white);
+  }
   .hero h1,
   .expertise h2,
   .benefits h2,
