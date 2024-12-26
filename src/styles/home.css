@@ -1,7 +1,20 @@
 .container {
-  max-width: 65ch;
+  max-width: min(90%, 1200px);
   margin: 0 auto;
   padding: var(--space-l);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-l);
+}
+
+@media (min-width: 768px) {
+  .hero {
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+  }
 }
 
 .hero {
@@ -12,6 +25,19 @@
   font-size: var(--step-5);
   margin-bottom: var(--space-xs);
   color: var(--color-purple-dark);
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
 }
 
 .subtitle {
