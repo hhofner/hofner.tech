@@ -5,12 +5,39 @@ import DeleteMe from "@components/DeleteMe.astro";
 import BackToTop from "@utils/BackToTop.astro";
 ---
 
-<Layout title="Astronaut - Astro starter template">
+<Layout title="Hans Hofner | Software Development Consultant">
   <SkipLink />
   <div class="sr-only" id="start"></div>
-  <section>
+  <main class="container">
+    <section class="hero">
+      <h1>Hans Hofner</h1>
+      <p class="subtitle">Software Development Consultant</p>
+      <div class="intro">
+        <p>
+          I'm a versatile software developer with 5 years of experience crafting robust web applications 
+          and delivering value through clean, maintainable code.
+        </p>
+      </div>
+    </section>
 
-  </section>
+    <section class="expertise">
+      <h2>What I Bring</h2>
+      <ul class="skills-list">
+        <li>
+          <strong>Frontend Excellence</strong>
+          <p>Deep expertise in React ecosystem, Vue.js, and modern frontend frameworks including Next.js and Nuxt.</p>
+        </li>
+        <li>
+          <strong>Full-Stack Capability</strong>
+          <p>Proficient in Python backend development with a growing expertise in Elixir for scalable solutions.</p>
+        </li>
+        <li>
+          <strong>Team Integration</strong>
+          <p>Strong communication skills and adaptability to different team dynamics and development workflows.</p>
+        </li>
+      </ul>
+    </section>
+  </main>
   <section aria-label="Utilities">
     <BackToTop />
   </section>
