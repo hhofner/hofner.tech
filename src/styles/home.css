@@ -52,16 +52,20 @@
   margin-bottom: var(--space-l);
 }
 
+.cta-wrapper {
+  margin-top: var(--space-m);
+}
+
 .cta-button {
   display: inline-flex;
   align-items: center;
   gap: var(--space-xs);
   background-color: var(--color-purple-dark);
   color: var(--color-white);
-  padding: var(--space-xs) var(--space-m);
+  padding: var(--space-xs) var(--space-s);
   border-radius: var(--border-radius);
   text-decoration: none;
-  font-size: var(--step-1);
+  font-size: var(--step-0);
   font-weight: 500;
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
